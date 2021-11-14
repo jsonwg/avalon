@@ -35,6 +35,10 @@
 <svelte:window on:keydown={handleKeydown} />
 <svelte:head>
   <title>Avalon</title>
+  <meta
+    name="description"
+    content="Fight an endless horde of monsters with nothing but your typing skills."
+  />
 </svelte:head>
 
 <div class="h-screen bg-gray-900">
