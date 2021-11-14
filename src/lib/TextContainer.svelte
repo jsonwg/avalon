@@ -5,7 +5,7 @@
 
 <div class="fixed bottom-[2vh] flex justify-center w-screen">
   <p
-    class="text-xl lg:text-3xl text-white text-center min-w-[50ch] max-w-[80ch] p-3 rounded-2xl 
+    class="text-2xl lg:text-4xl text-white text-center min-w-[50ch] max-w-[80ch] p-3 rounded-2xl 
          bg-black after:filler"
   >
     <!-- Display the entire string if there are less than 75 characters, otherwise display the-->

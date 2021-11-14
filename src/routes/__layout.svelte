@@ -14,7 +14,7 @@
     // then delete the entire last phrase by calling deletePhrase().
     if (key === 'Backspace') {
       string = string.slice(0, -1);
-      if (ctrl) string = wordDelete();
+      if (ctrl) string = deletePhrase();
     }
 
     // Only allow for one trailing space at the end of the string.

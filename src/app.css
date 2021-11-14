@@ -1,13 +1,16 @@
 /* Write your global styles here, in PostCSS syntax */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Kings&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Inconsolata&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  /*font-family: 'Inconsolata', monospace;*/
   font-family: 'Comfortaa', cursive;
+}
+
+span {
+  font-family: 'Inconsolata', monospace;
 }
 
 @layer utilities {
