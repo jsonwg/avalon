@@ -1,6 +1,6 @@
 <script>
   import '../app.css';
-  import TextContainer from '$lib/TextContainer.svelte';
+  import { TextContainer } from '$lib';
 
   // Holds all the valid character inputs.
   const keys = new Set('abcdefghijklmnopqrstuvwxyz`1234567890-=~!@#$%^&*()_+[]\\;\',./{}|:"<>?');
@@ -9,6 +9,10 @@
   function handleKeydown(event) {
     const key = event.key;
     const ctrl = event.ctrlKey;
+
+    if (key === 'Enter') {
+      return submitString();
+    }
 
     // If the backspace is pressed, check if CTRL is also pressed. If CTRL is also pressed then
     // then delete the entire last phrase by calling deletePhrase().
@@ -42,7 +46,7 @@
 </svelte:head>
 
 <div class="h-screen bg-gray-900">
-  <header class="flex justify-center p-3 bg-black">
+  <header class="flex justify-center gap-10 p-3 bg-black">
     <h1
       class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-6xl 
              font-bold text-transparent"
