@@ -5,7 +5,17 @@ const config = {
   purge: ['./src/**/*.{html,js,svelte,ts}'],
 
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        'fade-pulse': {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: 0 },
+        },
+      },
+      animation: {
+        'fade-pulse': 'fade-pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
+    },
     colors: {
       transparent: 'transparent',
       gray: colors.gray,
