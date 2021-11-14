@@ -13,13 +13,11 @@
       string = string.slice(0, -1);
       if (ctrl) string = wordDelete();
     }
-    if (string.length > 100) return;
-
     if (key === ' ') string += string.at(-1) === ' ' ? '' : key;
     if (keys.has(key.toLowerCase())) string += key;
   }
 
-  function wordDelete() {
+  function deletePhrase() {
     const index = string.lastIndexOf(' ');
     if (index === -1) return '';
     return string.slice(0, index);
