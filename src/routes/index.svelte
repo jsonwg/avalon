@@ -1,9 +1,9 @@
 <script>
-  import { string } from '$lib/stores';
-  import { LoginButton, PlayButton } from '$lib';
+  import { LoginButton, PlayButton, MenuButton } from '$lib';
 </script>
 
-<div class="flex items-center justify-center gap-5 h-4/5">
+<div class="flex items-center justify-center gap-20 h-4/5">
+  <MenuButton />
   <PlayButton />
   <LoginButton />
 </div>

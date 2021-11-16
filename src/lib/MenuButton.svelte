@@ -1,6 +1,8 @@
 <script>
   import Button from './Button.svelte';
-  const string = 'MENU';
+  import { string } from '$lib/stores';
+
+  const text = 'MENU';
 </script>
 
-<Button {string} />
+<Button {text} />

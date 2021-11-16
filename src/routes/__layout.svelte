@@ -2,7 +2,6 @@
   import '../app.css';
   import { TextContainer } from '$lib';
   import { string } from '$lib/stores';
-  import { page } from '$app/stores';
 
   // Holds all the valid character inputs.
   const keys = new Set('abcdefghijklmnopqrstuvwxyz`1234567890-=~!@#$%^&*()_+[]\\;\',./{}|:"<>?');
@@ -44,17 +43,15 @@
   />
 </svelte:head>
 
-{#key $page}
-  <div class="h-screen bg-gray-900">
-    <header class="flex justify-center gap-10 p-3 bg-black">
-      <h1
-        class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-6xl 
+<div class="h-screen bg-gray-900">
+  <header class="flex justify-center gap-10 p-3 bg-black">
+    <h1
+      class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-6xl 
              font-bold text-transparent"
-      >
-        Avalon
-      </h1>
-    </header>
-    <slot />
-    <TextContainer />
-  </div>
-{/key}
+    >
+      Avalon
+    </h1>
+  </header>
+  <slot />
+  <TextContainer />
+</div>

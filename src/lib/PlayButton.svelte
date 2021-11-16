@@ -16,4 +16,4 @@
 
 <svelte:window on:keydown={navigate} />
 
-<Button {text} />
+<Button {text} callback={console.log('baz')} />
