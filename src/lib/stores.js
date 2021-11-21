@@ -1,20 +1,26 @@
 import { writable } from 'svelte/store';
 import { tweened } from 'svelte/motion';
-import { cubicOut } from 'svelte/easing';
+import { expoOut } from 'svelte/easing';
 
 export const string = writable('');
 
 export const hp = tweened(100, {
   duration: 400,
-  easing: cubicOut,
+  easing: expoOut,
 });
 
-export const mp = tweened(100, {
+export const dp = tweened(100, {
   duration: 400,
-  easing: cubicOut,
+  easing: expoOut,
+});
+
+export const ap = tweened(100, {
+  duration: 400,
+  easing: expoOut,
 });
 
 setInterval(() => {
   hp.set(Math.random() * 100);
-  mp.set(Math.random() * 100);
-}, 1000);
+  dp.set(Math.random() * 100);
+  ap.set(Math.random() * 100);
+}, 500);

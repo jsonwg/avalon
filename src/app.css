@@ -13,6 +13,10 @@ span {
   font-family: 'Share Tech Mono', monospace;
 }
 
+p {
+  font-family: 'Hack';
+}
+
 @layer utilities {
   .filler {
     content: '\200b';

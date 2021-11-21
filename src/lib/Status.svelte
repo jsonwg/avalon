@@ -1,9 +1,9 @@
 <script>
-  import { HPBar } from '$lib';
-  import { MPBar } from '$lib';
+  import { HPBar, DBar, ABar } from '$lib';
 </script>
 
 <section class="flex flex-col gap-5 m-5">
   <HPBar />
-  <MPBar />
+  <DBar />
+  <ABar />
 </section>

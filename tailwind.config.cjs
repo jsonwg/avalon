@@ -16,9 +16,13 @@ const config = {
         'fade-pulse': 'fade-pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       boxShadow: {
-        box: 'inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08)',
+        box: 'inset 0 1px 2px rgba(0, 0, 0, 1), 0 1px rgba(255, 255, 255, 0.08)',
         'glow-r': '0 0 0.5rem rgba(255, 0, 0, 1)',
         'glow-b': '0 0 0.5rem rgba(100, 100, 255, 1)',
+        'glow-y': '0 0 0.5rem rgba(255, 200, 0, 1)',
+      },
+      fontFamily: {
+        nerd: 'Hack, monospace',
       },
     },
     colors: {

@@ -1,5 +1,4 @@
 <script>
-  import { blur } from 'svelte/transition';
   import { string } from '$lib/stores';
 
   // Holds all the valid character inputs.
@@ -37,13 +36,13 @@
 
 <div class="flex justify-center fixed bottom-[2vh] w-screen">
   <p
-    class="min-w-[50ch] max-w-[80ch] p-3 text-white text-center text-2xl lg:text-4xl bg-black
-           rounded-2xl after:filler"
+    class="min-w-[25ch] max-w-[80ch] p-3 text-white text-center text-2xl lg:text-4xl bg-black
+           rounded-2xl after:filler shadow-box"
   >
-    <!-- Display the entire string if there are less than 65 characters, otherwise display the-->
-    <!-- last 65 characters of the string.-->
-    {#each $string.slice(Math.max(0, $string.length - 65)) as char}
-      <span in:blur>{char}</span>
+    <!-- Display the entire string if there are less than 70 characters, otherwise display the-->
+    <!-- last 70 characters of the string.-->
+    {#each $string.slice(Math.max(0, $string.length - 70)) as char}
+      <span>{char}</span>
     {/each}
   </p>
 </div>
