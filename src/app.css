@@ -6,19 +6,23 @@
 @tailwind utilities;
 
 * {
-  font-family: 'Inconsolata', monospace;
-}
-
-span {
   font-family: 'Share Tech Mono', monospace;
-}
-
-p {
-  font-family: 'Hack';
 }
 
 @layer utilities {
   .filler {
     content: '\200b';
+  }
+
+  .text-shadow-r {
+    text-shadow: 0 0 0.5rem rgba(255, 0, 0, 1);
+  }
+
+  .text-shadow-b {
+    text-shadow: 0 0 0.5rem rgba(100, 100, 255, 1);
+  }
+
+  .text-shadow-y {
+    text-shadow: 0 0 0.5rem rgba(255, 200, 0, 1);
   }
 }

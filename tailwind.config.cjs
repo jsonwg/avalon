@@ -21,9 +21,6 @@ const config = {
         'glow-b': '0 0 0.5rem rgba(100, 100, 255, 1)',
         'glow-y': '0 0 0.5rem rgba(255, 200, 0, 1)',
       },
-      fontFamily: {
-        nerd: 'Hack, monospace',
-      },
     },
     colors: {
       transparent: 'transparent',

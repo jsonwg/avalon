@@ -9,7 +9,7 @@ export const hp = tweened(100, {
   easing: expoOut,
 });
 
-export const dp = tweened(100, {
+export const rp = tweened(100, {
   duration: 400,
   easing: expoOut,
 });
@@ -21,6 +21,6 @@ export const ap = tweened(100, {
 
 setInterval(() => {
   hp.set(Math.random() * 100);
-  dp.set(Math.random() * 100);
+  rp.set(Math.random() * 100);
   ap.set(Math.random() * 100);
 }, 500);
